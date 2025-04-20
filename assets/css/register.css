@@ -19,7 +19,7 @@ body {
     border: 1px solid gray;
     padding: 20px;
     border-radius: 15px;
-    background-image: linear-gradient(rgb(136, 219, 252), rgb(179, 179, 174));
+   
   }
   
   .title{
@@ -28,5 +28,6 @@ body {
   
   .submit{
       width: 100%;
+      background-color: red;
   }
   

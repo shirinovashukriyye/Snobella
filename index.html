@@ -2,143 +2,165 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
 </head>
 
 <body>
 
-    <header>
-        <div class="container">
-            <div class="snob">
-                <h1>Snobella</h1>
-            </div>
-            <div class="search">
-                <input type="text" placeholder="Search...">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="header-items">
-                <ul class="items">
-                    <li class="icon">
-                        <a href="login.html">
-                            <i class="fa-solid fa-user"></i> Sign up
-                        </a>
-                    </li>
-                    <li class="icon">
-                        <a href="">
-                            <i class="fa-solid fa-heart"></i> Wishlist
-                        </a>
-                    </li>
-                    <li class="icon">
-                        <a href="">
-                            <i class="fa-solid fa-bag-shopping"></i> Basket
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
+  <header>
+    <div class="container">
+      <div class="snob">
+        <h1>Snobella</h1>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Search...">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="header-items">
+        <ul class="items">
+          <li class="icon">
+            <a href="login.html">
+              <i class="fa-solid fa-user"></i> Sign up
+            </a>
+          </li>
+          <li class="icon">
+            <a href="wishlist.html">
+              <i class="fa-solid fa-heart"></i> Wishlist
+            </a>
+          </li>
+          <li class="icon">
+            <a href="basket.html">
+              <i class="fa-solid fa-bag-shopping"></i> Basket
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
 
-    <main>
-       <div class="main-container"> 
-        <div class="home-texts">
-            <h3 class="off">30% off</h3>
-            <h1>Handbag products</h1>
-            <p>It is a long established fact that a reader will be <br>distracted by the readable content expound the actual <br> teachings of the great explorer</p>
-            <button class="shop-button">Shop now</button>
-        </div>
-        <img class="bags-img" src="assets/image/6029d9d5a566ce3e272ca21551589b01.png" alt="">
+  <main>
+    <div class="main-container">
+      <div class="home-texts">
+        <h3 class="off">30% off</h3>
+        <h1>Handbag products</h1>
+        <p>It is a long established fact that a reader will be <br>distracted by the readable content expound the actual
+          <br> teachings of the great explorer
+        </p>
+        <button class="shop-button">Shop now</button>
+      </div>
+      <img class="bags-img" src="assets/image/6029d9d5a566ce3e272ca21551589b01.png" alt="">
     </div>
 
-    </main>
-
-<div class="cards">
+  </main>
+  <label for="sortSelect">Sıralama:</label>
+  <select id="sortSelect">
+      <option value="azToZa">A-dan Z-ə</option>
+      <option value="zaToAz">Z-dan A-ya</option>
+  </select>
+  <div class="cards">
     <div class="product-card">
-        <div class="product-image">
-          <img src="https://via.placeholder.com/300x220.png?text=Product+Image" alt="Product Image">
-          <div class="wishlist-icon">&#9825;</div> <!-- ♡ -->
-        </div>
-      
+      <div class="product-image">
+        <img
+          src="assets/image/kisspng-chanel-gucci-handbag-wallet-sell-my-gucci-bag-www-pixshark-com-images-galler-5b7def98c254a0 2 (2).png"
+          alt="Product Image">
+        <div class="wishlist-icon">&#9825;</div>
+      </div>
+      <div class="product-details">
+        <h2>Cross Body Bag (Authentic Pre-Owned) Black bag</h2>
+        <div class="price">$29.99</div>
+        <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+        <button class="cart-btn">Add to card</button>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/image/kisspng-handbag-baggage-hand-luggage-leather-women-bag-5acd4069b62017 1.png"
+          alt="Product Image">
+        <div class="wishlist-icon">&#9825;</div>
+
         <div class="product-details">
-          <h2>Stylish T-shirt</h2>
+          <h2>City Bag Outfit</h2>
           <div class="price">$29.99</div>
           <div class="stars">⭐ ⭐ ⭐ ⭐ ☆</div>
           <button class="cart-btn">Add to card</button>
         </div>
       </div>
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://via.placeholder.com/300x220.png?text=Product+Image" alt="Product Image">
-          <div class="wishlist-icon">&#9825;</div> <!-- ♡ -->
-        </div>
-      
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/image/5a34e83495d908 2.png" alt="Product Image">
+        <div class="wishlist-icon">&#9825;</div>
+
         <div class="product-details">
-          <h2>Stylish T-shirt</h2>
+          <h2>Dior Saddle Mount Middle Bag</h2>
           <div class="price">$29.99</div>
           <div class="stars">⭐ ⭐ ⭐ ⭐ ☆</div>
           <button class="cart-btn">Add to card</button>
         </div>
       </div>
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://via.placeholder.com/300x220.png?text=Product+Image" alt="Product Image">
-          <div class="wishlist-icon">&#9825;</div> <!-- ♡ -->
-        </div>
-      
-        <div class="product-details">
-          <h2>Stylish T-shirt</h2>
-          <div class="price">$29.99</div>
-          <div class="stars">⭐ ⭐ ⭐ ⭐ ☆</div>
-          <button class="cart-btn">Add to card</button>
-        </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/image/kisspng-bag-laptop-backpack-knomo-beauchamp-5b0bf6a37cde46 13.png" alt="Product Image">
+        <div class="wishlist-icon">&#9825;</div>
       </div>
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://via.placeholder.com/300x220.png?text=Product+Image" alt="Product Image">
-          <div class="wishlist-icon">&#9825;</div> <!-- ♡ -->
-        </div>
-        <div class="product-details">
-          <h2>Stylish T-shirt</h2>
-          <div class="price">$29.99</div>
-          <div class="stars">⭐ ⭐ ⭐ ⭐ ☆</div>
-          <button class="cart-btn">Add to card</button>
-        </div>
+      <div class="product-details">
+        <h2>Dior Mini Calfskin Toile de Jouy</h2>
+        <div class="price">$29.99</div>
+        <div class="stars">⭐ ⭐ ⭐ ⭐ ☆</div>
+        <button class="cart-btn">Add to card</button>
       </div>
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://via.placeholder.com/300x220.png?text=Product+Image" alt="Product Image">
-          <div class="wishlist-icon">&#9825;</div> <!-- ♡ -->
-        </div>
-      
-        <div class="product-details">
-          <h2>Stylish T-shirt</h2>
-          <div class="price">$29.99</div>
-          <div class="stars">⭐ ⭐ ⭐ ⭐ ☆</div>
-          <button class="cart-btn">Add to card</button>
-        </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/image/kisspng-handbag-baggage-hand-luggage-leather-women-bag-5acd4069b62017 1.png"
+          alt="Product Image">
+        <div class="wishlist-icon">&#9825;</div>
       </div>
-      <div class="product-card">
-        <div class="product-image">
-          <img src="https://via.placeholder.com/300x220.png?text=Product+Image" alt="Product Image">
-          <div class="wishlist-icon">&#9825;</div> <!-- ♡ -->
-        </div>
-      
+
+      <div class="product-details">
+        <h2>Hermes Birkin 35 Plomb Bag</h2>
+        <div class="price">$29.99</div>
+        <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐ </div>
+        <button class="cart-btn">Add to card</button>
+      </div>
+    </div>
+    <div class="product-card">
+      <div class="product-image">
+        <img src="assets/image/kisspng-handbag-baggage-hand-luggage-leather-women-bag-5acd4069b62017 1.png"
+          alt="Product Image">
+        <div class="wishlist-icon">&#9825;</div>
+
         <div class="product-details">
-          <h2>Stylish T-shirt</h2>
+          <h2>Louis Vuitton réédite sa collaboration</h2>
           <div class="price">$29.99</div>
-          <div class="stars">⭐ ⭐ ⭐ ⭐ ☆</div>
+          <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
           <button class="cart-btn">Add to card</button>
         </div>
       </div>
 
-</div>
+    </div>
+  </div>
+ 
+  <footer class="footer">
+    <div class="footer-left">
+      © 2020. All rights reserved.
+    </div>
+    <div class="footer-right">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </footer>
 
-    <script src="assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
