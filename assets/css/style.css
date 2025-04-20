@@ -181,9 +181,9 @@ main {
     display: flex;
     flex-wrap: wrap;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* 3 sütunlu grid */
-    gap: 20px;  /* Kartlar arasındakı məsafə */
-    width: 60%;  /* Konteynerin eni */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;  
+    width: 60%;  
 }
 
 .product-card {
@@ -278,6 +278,11 @@ select {
     margin: 20px 0;
     padding: 10px;
     font-size: 16px;
+   
+}
+
+.a-z{
+    margin-left: 100px;
 }
 
 
@@ -289,6 +294,7 @@ select {
     border-top: 1px solid #ddd;
     font-size: 14px;
     color: #555;
+ margin-top: 100px;
   }
   
   .footer-right a {
@@ -301,3 +307,9 @@ select {
   .footer-right a:hover {
     color: #000;
   }
+
+  .sort-container {
+    margin-bottom: 20px;
+    margin-left: 100px;
+  }
+  

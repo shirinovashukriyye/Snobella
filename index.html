@@ -58,11 +58,19 @@
     </div>
 
   </main>
-  <label for="sortSelect">Sıralama:</label>
-  <select id="sortSelect">
+
+  <select class="a-z" id="sortSelect">
       <option value="azToZa">A-dan Z-ə</option>
       <option value="zaToAz">Z-dan A-ya</option>
   </select>
+  <div class="sort-container">
+    <select id="sort" onchange="sortProducts()">
+      <option value="default">Seçim et</option>
+      <option value="asc">Ucuzdan bahaya</option>
+      <option value="desc">Bahadan ucuza</option>
+    </select>
+  </div>
+
   <div class="cards">
     <div class="product-card">
       <div class="product-image">
@@ -73,7 +81,7 @@
       </div>
       <div class="product-details">
         <h2>Cross Body Bag (Authentic Pre-Owned) Black bag</h2>
-        <div class="price">$29.99</div>
+        <div class="price">$1120</div>
         <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
         <button class="cart-btn">Add to card</button>
       </div>
@@ -87,7 +95,7 @@
 
         <div class="product-details">
           <h2>City Bag Outfit</h2>
-          <div class="price">$29.99</div>
+          <div class="price">$290.8</div>
           <div class="stars">⭐ ⭐ ⭐ ⭐ ☆</div>
           <button class="cart-btn">Add to card</button>
         </div>
@@ -100,7 +108,7 @@
 
         <div class="product-details">
           <h2>Dior Saddle Mount Middle Bag</h2>
-          <div class="price">$29.99</div>
+          <div class="price">$299.99</div>
           <div class="stars">⭐ ⭐ ⭐ ⭐ ☆</div>
           <button class="cart-btn">Add to card</button>
         </div>
@@ -113,7 +121,7 @@
       </div>
       <div class="product-details">
         <h2>Dior Mini Calfskin Toile de Jouy</h2>
-        <div class="price">$29.99</div>
+        <div class="price">$1099.99</div>
         <div class="stars">⭐ ⭐ ⭐ ⭐ ☆</div>
         <button class="cart-btn">Add to card</button>
       </div>
@@ -127,7 +135,7 @@
 
       <div class="product-details">
         <h2>Hermes Birkin 35 Plomb Bag</h2>
-        <div class="price">$29.99</div>
+        <div class="price">$200.99</div>
         <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐ </div>
         <button class="cart-btn">Add to card</button>
       </div>
@@ -140,7 +148,7 @@
 
         <div class="product-details">
           <h2>Louis Vuitton réédite sa collaboration</h2>
-          <div class="price">$29.99</div>
+          <div class="price">$119.99</div>
           <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
           <button class="cart-btn">Add to card</button>
         </div>
