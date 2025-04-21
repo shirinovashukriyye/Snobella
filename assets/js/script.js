@@ -533,3 +533,59 @@ function sortProducts() {
   }
 }
 
+const adanDropdown = document.getElementById("a-z");
+const zyeDropdown = document.getElementById("azToZa");
+const zdanDropdown = document.getElementById("zaToAz");
+
+// Məhsulları əldə et
+const products = document.querySelectorAll(".product");
+
+// Funksiya: Məhsulları filtr etmək
+function filterProducts() {
+  const selectedAdan = adanDropdown.value;
+  const selectedZye = zyeDropdown.value;
+  const selectedZdan = zdanDropdown.value;
+
+  // Məhsulları yoxla və uyğun olanları göstər
+  products.forEach(product => {
+    const productAdan = product.getAttribute("a-z");
+    const productZye = product.getAttribute("azToZa");
+    const productZdan = product.getAttribute("zaToAz");
+
+    // Məhsulun uyğun olub olmadığını yoxla
+    if (
+      (selectedAdan === "" || productAdan === selectedAdan) &&
+      (selectedZye === "" || productZye === selectedZye) &&
+      (selectedZdan === "" || productZdan === selectedZdan)
+    ) {
+      product.classList.remove("hidden");
+    } else {
+      product.classList.add("hidden");
+    }
+  });
+}
+
+// Dropdownlarda dəyişiklik olduqda funksiyanı işə sal
+adanDropdown.addEventListener("change", filterProducts);
+zyeDropdown.addEventListener("change", filterProducts);
+zdanDropdown.addEventListener("change", filterProducts);
+
+// İlk dəfə səhifə yükləndikdə filtrə başla
+filterProducts();
+
+const cards = document.querySelector('.cards');
+
+const userData = JSON.parse(localStorage.getItem("users"));
+
+let isLogged = userData.isLogged;
+
+function cardHidden() {
+  if (isLogged === false) {
+    cards.style.display = 'block';
+  } else {
+    cards.style.display = 'none';
+  }
+}
+
+cardHidden();
+
