@@ -1,33 +1,37 @@
-body {
-    height: 100vh;
-  }
-  
-  .register_area {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .password-check {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .register {
-    width: 400px;
-    border: 1px solid gray;
-    padding: 20px;
-    border-radius: 15px;
-   
-  }
-  
-  .title{
-      text-align: center;
-  }
-  
-  .submit{
-      width: 100%;
-      background-color: red;
-  }
-  
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.register {
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.submit{
+    width: 100%;
+    margin-top: 20px;
+}
+.logNextReg{
+  margin-top: 10px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23.8px;
+ color: #555555;
+
+}
+.linkReg{
+  text-decoration: none;
+  color: #000;
+}

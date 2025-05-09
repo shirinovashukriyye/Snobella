@@ -1,97 +1,181 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+.basket {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 10px;
+}
+
+.basket-item {
+  height: 211px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #e4e4e4;
+  padding: 15px 20px;
+  gap: 15px;
+}
+.basket-container {
+  margin-top: 30px;
+}
+.cardInfo {
+  width: 100%;
+  height: 180px;
+}
+.category-count {
+  margin-top: 20px;
+}
+.remove-btn-area {
+}
+.remove-btn {
+  width: 100px;
+  height: 24px;
+  font-size: 13px;
+}
+.title-price {
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27.2px;
+  color: #212121;
+}
+.category {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.8px;
+  color: #212121;
+  opacity: 0.7;
+}
+.count {
+  font-size: 12px;
+}
+.price {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30.6px;
+  color: #212121;
+}
+
+.basket-item .image {
+  width: 175px;
+  height: 137px;
+  border-radius: 8px;
+}
+.basket-item .title,
+.basket-item .price,
+.basket-item .category {
+  margin: 0;
+}
+
+.imgBasket {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.count-area {
+  width: 72px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  padding: 0 5px;
+  margin-top: 30px;
+}
+
+.bottom {
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  padding-top: 15px;
+  border-radius: 8px;
+  height: 200px;
+}
+.totalBot {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30.6px;
+}
+.confirm {
+  margin-top: 30px;
+  width: 100%;
+  height: 52px;
+  border-radius: 8px;
+  background-color: #df4244;
+  border: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.confirm:hover {
+  opacity: 0.8;
+}
+.remove-btn-area {
+  text-align: right;
+}
+.total {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+.total p,
+.total h4 {
+  margin: 0;
+}
+.count {
+  font-size: 20px;
+  margin: 0;
+}
+.minus-btn,
+.plus-btn {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 15px;
+}
+.minus-btn:disabled {
+  cursor: not-allowed;
+}
+
+.empty {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+.favorite {
+  margin-left: 3px;
+}
+.wishlist-btn {
+  width: 100 px;
+  height: 24px;
+  font-size: 14px;
+}
+@media (max-width: 562px) {
+  .category {
+    display: none;
   }
-  
-  header {
-    background-color: #4caf50;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .basket {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 10px;
-  }
-  
-  .basket-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 15px 20px;
-    gap: 15px;
-  }
-  
-  .basket-item .image {
-    width: 150px;
-    height: 100px;
-    border-radius: 8px;
-  }
-  .basket-item .title,
-  .basket-item .price,
-  .basket-item .category {
-    margin: 0;
-    width: 200px;
-  }
-  
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-  }
-  
-  .count-area {
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    border: 1px solid #bda9a9;
-    border-radius: 5px;
-    padding: 0 5px;
-  }
-  
-  .bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-  .total {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 20px;
-  }
-  .total p,
-  .total h4 {
-    margin: 0;
-  }
-  .count {
-    font-size: 20px;
-    margin: 0;
-  }
-  .minus-btn,
-  .plus-btn {
-    cursor: pointer;
-    border: none;
-    background: none;
-    font-size: 25px;
-  }
-  .minus-btn:disabled {
-    cursor: not-allowed;
-  }
-  
-  .empty {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: 20px;
-  }
-  
+}
+.basketInner{
+  margin-top: 110px;
+}
+.clearAll{
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+
+}
